@@ -1,17 +1,17 @@
-const body = document.querySelector("body");
-const header = document.querySelector(".header");
-const overlay = document.querySelector(".overlay");
-const mobileMenu = document.querySelector(".mobile-menu");
-const btnHamburger = document.querySelector("#btnHamburger");
+let body = document.querySelector("body");
+var overlay = document.getElementById("overlay");
+var mobileMenu = document.getElementById("mobile-menu");
+var btnHamburger = document.getElementById("btnHamburger");
 
 btnHamburger.addEventListener("click", function () {
   console.log("Button clicked");
 
-  btnHamburger.classList.add("open");
+  btnHamburger.classList.toggle("open");
 
-  mobileMenu.classList.add("active");
+  mobileMenu.classList.toggle("active");
+  
+  overlay.classList.toggle("show");
+  
+  body.classList.toggle("no-scroll");
 
-  overlay.classList.add("show");
-
-  body.classList.add("no-scroll");
 });

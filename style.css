@@ -138,7 +138,7 @@ a:hover {
     background-image: linear-gradient(hsl(234, 33%, 23%), hsla(231, 11%, 88%, 0.116))
 }
 
-.overlay.show {
+#overlay.show {
     opacity: 1;
     display: flex;
     overflow: hidden;
@@ -314,7 +314,7 @@ a:hover {
         box-shadow: 0 0 1em var(--Dark-Blue);
     }
 
-    .mobile-menu.active {
+    #mobile-menu.active {
         display: block;
     }
 
