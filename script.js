@@ -7,11 +7,11 @@ const btnHamburger = document.querySelector("#btnHamburger");
 btnHamburger.addEventListener("click", function () {
   console.log("Button clicked");
 
-  btnHamburger.classList.toggle("open");
+  btnHamburger.classList.add("open");
 
-  mobileMenu.classList.toggle("active");
+  mobileMenu.classList.add("active");
 
-  overlay.classList.toggle("active");
+  overlay.classList.add("show");
 
-  body.classList.toggle("no-scroll");
+  body.classList.add("no-scroll");
 });
